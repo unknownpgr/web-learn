@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/main.css">
+    <title>Very Simple Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <div class="input">
+            <label for="param1">a = </label>
+            <input type="number" id="param1" value="0">
+        </div>
+        <div class="input">
+            <label for="param2">b = </label>
+            <input type="number" id="param2" value="0">
+        </div>
+        <div class="buttons">
+            <button onclick="doAdd()">ADD(a+b)</button>
+            <button onclick="doSub()">SUB(a-b)</button>
+        </div>
+        <div class="result">
+            <label for="result">Result : </label>
+            <span id="result"></span>
+        </div>
+
+        <div>
+            <h2>
+                Description
+            </h2>
+            <p>
+                이 웹 사이트는 웹에 대한 이해를 돕기 위한 간단한 예제입니다. 소스코드가 그렇게 많지 않으므로 하나씩 천천히 살펴보시면 동작 원리를 쉽게 이해할 수 있을 것으로 생각됩니다. 다음과 같은
+                순서로 파일들을 살펴보시는 것을 추천드립니다.
+            </p>
+            <p>
+            <ol>
+                <li><code>public/index.html</code></li>
+                <li><code>public/main.js</code></li>
+                <li><code>public/main.css</code></li>
+                <li><code>/index.js</code></li>
+            </ol>
+            </p>
+            <p>
+                이 사이트는 서버, 클라이언트 모두 교육을 위해 최대한 알아보기 쉽게 작성되었고, 따라서 비효율적인 부분이 많습니다. 예를 들어 <code>public/main.js</code>의
+                <code>doAdd</code>, <code>doSub</code> 함수는
+                내용이 거의
+                똑같으므로 하나의 함수로 묶을 수 있고, <code>let</code> 대신 <code>const</code>를 쓰면 더 좋은 부분도 많이 있습니다. 이런 부분을 찾아서 효율적으로
+                고쳐보시기 바랍니다.
+            </p>
+            <p>
+                또한 이 서버에서 더하기 연산에는 오류가 있습니다. 바로 더하기를 하면 값이 수학적으로 더해지는 것이 아니라, 그냥 가로로 나열되어버린다는 점입니다. 예를 들어 1+2=3이 나와야
+                하는데, 1+2=12가 나옵니다. 왜 이런 일이 발생하는지 알아보고 고쳐봅시다.
+            </p>
+        </div>
+        <footer>
+            Copyright : <a href="https://unknownpgr.com">Unknownpgr</a>
+        </footer>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

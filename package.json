@@ -1,0 +1,15 @@
+{
+  "name": "web-learn",
+  "version": "1.0.0",
+  "description": "이 프로젝트는 컴퓨터과학/공학 비전공자가 서버-클라이언트 구조를 쉽게 이해할 수 있도록 하기 위한 교육용 프로젝트이다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
